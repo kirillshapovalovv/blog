@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Выводим заголовок -->
+  <title>BLOG — главная</title>
+  <!-- Подключаем normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Подключаем global -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Создаем шапку сайта -->
+  <header class="header">
+    <div class="header-wrapper">
+      <a href="/" class="header-logo">
+        <img class="header-logo-image" src="img/logo.png" alt="logo: Pikabu">
+      </a>
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Свежее</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Лучшее</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Подписки</a></li>
+        </ul>
+        
+      </nav>
+      <!-- /.header-nav -->
+      <div class="input-group">
+        <input type="search" class="search-input search" placeholder="#хештег">
+        <button class="search-button" type="submit">
+          <img src="img/search.svg" alt="icon: search" class="search-icon" style="fill: #E0245E;">
+        </button>
+      </div>
+      <!-- /.input-group -->
+      <a href="#" class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <!-- /.header-wrapper -->
+  </header>
+
+  <div class="content">
+    <main class="posts">
+      <section class="post">
+        <div class="post-body">
+          <h2 class="post-title">Заголовлок поста</h2>
+          <p class="post-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Языком что рот
+            маленький реторический вершину текстов обеспечивает гор свой назад решила сбить маленькая дорогу жизни рукопись ему
+            букв деревни предложения, ручеек залетают продолжил парадигматическая? Но языком сих пустился, запятой своего его
+            снова решила меня вопроса моей своих пояс коварный, власти диких правилами напоивший они текстов ipsum первую
+            подпоясал? Лучше, щеке подпоясал приставка большого курсивных на берегу своего? Злых, составитель агентство что
+            вопроса ведущими о решила одна алфавит!
+          </p>
+          <div class="tags">
+            <a href="#" class="tag">#свежее</a>
+          </div>
+        </div>
+        <div class="post-footer">
+          <div class="post-buttons">
+            <button class="post-button likes">
+              <svg width="19" height="20" class="icon icon-like">
+                <use xlink:href="img/icons.svg#like"></use>
+              </svg>
+              <span class="likes-counter">26</span>
+            </button>
+            <button class="post-button comments">
+              <svg width="21" height="21" class="icon icon-comment">
+                <use xlink:href="img/icons.svg#comment"></use>
+              </svg>
+              <span class="comments-counter">157</span>
+            </button>
+            <button class="post-button save">
+              <svg width="19" height="19" class="icon icon-save">
+                <use xlink:href="img/icons.svg#save"></use>
+              </svg>
+            </button>
+            <button class="post-button share">
+              <svg width="17" height="19" class="icon icon-share">
+                <use xlink:href="img/icons.svg#share"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="post-author">
+            <div class="author-about">
+              <a href="#" class="author-username">Kirill Shapovalov</a>
+              <span class="post-time">5 минут назад</span>
+            </div>
+            <a href="#" class="author-link"><img src="img/avatar.jpeg" alt="avatar" class="author-avatar"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- /.posts -->
+    <form action="#" class="add-post">
+      <input type="text" name="title" class="add-title" placeholder="Заголовок поста">
+      <textarea name="text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+      <input type="text" name="tags" class="add-tags" placeholder="Добавьте теги через запятую">
+      <div class="add-buttons">
+        <button type="submit" class="button add-button">
+          <svg class="icon icon-fire">
+            <use xlink:href="img/icons.svg#fire"></use>
+          </svg>
+          Опубликовать пост
+        </button>
+      </div>
+    </form>
+    <aside class="sidebar">
+
+      <div class="login">
+        <form class="login-form">
+          <h2 class="login-title">Авторизация</h2>
+          <!-- Email -->
+          <input type="email" class="login-input login-email" 
+          name="email" minlength="3" required placeholder="Email">
+          <!-- Пароль -->
+          <input type="password" class="login-input login-password" 
+          name="password" minlength="3" required placeholder="Пароль">
+          <!-- Забыли пароль? -->
+          <a href="#" class="login-forget">Забыли пароль?</a>
+          <!-- Войти -->
+          <button class="login-signin" type="submit">Войти</button>
+          <!-- Регистрация -->
+          <a href="#" class="login-signup">Регистрация</a>
+        </form>
+      </div>
+
+
+      
+      <div class="user edit-close">
+        <a href="#" class="user-info">
+          <img width="40" height="40" src="img/user.png" alt="photo: user" class="user-avatar">
+          <span class="user-name">Kirill Shapovalov</span>
+        </a>
+        <!-- /.user-info -->
+        <!-- Редактировать информацию о пользователе -->
+        <a href="#" class="edit">
+          <img class="icon icon-edit" src="img/edit-button.svg" alt="Edit img">
+        </a>
+        <a href="#" class="exit">
+          <svg class="icon icon-exit" height="512pt" viewBox="0 0 512.016 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m496 240.007812h-202.667969c-8.832031 0-16-7.167968-16-16 0-8.832031 7.167969-16 16-16h202.667969c8.832031 0 16 7.167969 16 16 0 8.832032-7.167969 16-16 16zm0 0"/>
+            <path d="m416 320.007812c-4.097656 0-8.191406-1.558593-11.308594-4.691406-6.25-6.253906-6.25-16.386718 0-22.636718l68.695313-68.691407-68.695313-68.695312c-6.25-6.25-6.25-16.382813 0-22.632813 6.253906-6.253906 16.386719-6.253906 22.636719 0l80 80c6.25 6.25 6.25 16.382813 0 22.632813l-80 80c-3.136719 3.15625-7.230469 4.714843-11.328125 4.714843zm0 0"/>
+            <path d="m170.667969 512.007812c-4.566407 0-8.898438-.640624-13.226563-1.984374l-128.386718-42.773438c-17.46875-6.101562-29.054688-22.378906-29.054688-40.574219v-384c0-23.53125 19.136719-42.6679685 42.667969-42.6679685 4.5625 0 8.894531.6406255 13.226562 1.9843755l128.382813 42.773437c17.472656 6.101563 29.054687 22.378906 29.054687 40.574219v384c0 23.53125-19.132812 42.667968-42.664062 42.667968zm-128-480c-5.867188 0-10.667969 4.800782-10.667969 10.667969v384c0 4.542969 3.050781 8.765625 7.402344 10.28125l127.785156 42.582031c.917969.296876 2.113281.46875 3.480469.46875 5.867187 0 10.664062-4.800781 10.664062-10.667968v-384c0-4.542969-3.050781-8.765625-7.402343-10.28125l-127.785157-42.582032c-.917969-.296874-2.113281-.46875-3.476562-.46875zm0 0"/>
+            <path d="m325.332031 170.675781c-8.832031 0-16-7.167969-16-16v-96c0-14.699219-11.964843-26.667969-26.664062-26.667969h-240c-8.832031 0-16-7.167968-16-16 0-8.832031 7.167969-15.9999995 16-15.9999995h240c32.363281 0 58.664062 26.3046875 58.664062 58.6679685v96c0 8.832031-7.167969 16-16 16zm0 0"/>
+            <path d="m282.667969 448.007812h-85.335938c-8.832031 0-16-7.167968-16-16 0-8.832031 7.167969-16 16-16h85.335938c14.699219 0 26.664062-11.96875 26.664062-26.667968v-96c0-8.832032 7.167969-16 16-16s16 7.167968 16 16v96c0 32.363281-26.300781 58.667968-58.664062 58.667968zm0 0"/>
+          </svg>
+        </a>
+        <!-- /.exit -->
+      </div>
+      <!-- Редактировать инф-ю о пользователе -->
+      <form class="edit-container">
+        <h2 class="edit-title">Редактировать</h2>
+        <!-- Изменить логин -->
+        <label class="edit-label">
+          <input type="text" class="edit-input edit-username" 
+          name="username" minlength="3" maxlength="21" placeholder="Ваш новый логин" required>
+        </label>
+        <!-- Изменить аватарку -->
+        <label class="edit-label">
+          <input type="text" class="edit-input edit-avatar" 
+          name="avatar" placeholder="URl вашей новой аватарки">
+        </label>
+        <!-- Кнопка сохранить -->
+        <button class="edit-btn">Сохранить</button>
+      </form>
+      <!-- /.user -->
+      <nav class="sidebar-nav">
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Ответы</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link active">Комментарии</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Оценки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Сохраненное </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Подписки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Заметки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Игнор-лист</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="new-post.html" class="button button-new-post">
+        <svg class="icon icon-fire">
+          <use xlink:href="img/icons.svg#fire"></use>
+        </svg>
+        Опубликовать пост
+      </a>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Комментарий дня</h2>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <a href="#" class="card-body-title">Как обмануть банкомат, если вы хотите снять больше наличных</a>
+          <p class="card-text">Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками в отношении поставленных
+          задач. Задача организации, в особенности же консультация...</p>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+      <a href="#" class="ad"></a>
+    </aside>
+    <!-- /.sidebar -->
+  </div>
+  <!-- /.content -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- Аутентификация -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <!-- Database -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+  <!-- main script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
